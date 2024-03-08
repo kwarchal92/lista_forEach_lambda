@@ -31,9 +31,16 @@ public class Main {
         System.out.println("Usunięto drugi element z listy i dodano nowy.");
 
         lista.add(11); //dodano nowy element do listy
-        System.out.println("Elementy nie posortowane po usunięcu elementu i dodaniu nowego");
+        System.out.println("Elementy nieposortowane po usunięcu elementu i dodaniu nowego");
 
 
-        //wyrażenie lambda..
+        lista.forEach(e -> System.out.print(e + ", ")); //wyrażenie lambda
+
+        Collections.sort(lista); //ponowne sortowanie listy
+        
+        System.out.println();
+        System.out.println("Ponowne sortowanie listy.");
+
+        lista.forEach(e -> System.out.print(e + ", ")); //wyrażenie lambda
     }
 }
